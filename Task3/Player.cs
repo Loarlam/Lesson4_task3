@@ -12,22 +12,22 @@ namespace Task3
         */
         void IPlayable.Pause()
         {
-            
-        }
-
-        void IRecordable.Pause()
-        {
-
+            Console.WriteLine("Просмотр с диска в режиме паузы");
         }
 
         void IPlayable.Stop()
         {
+            Console.WriteLine("Просмотр с диска окончен");
+        }
 
+        void IRecordable.Pause()
+        {
+            Console.WriteLine("Запись на диск в режиме паузы");
         }
 
         void IRecordable.Stop()
         {
-
+            Console.WriteLine("Запись на диск окончена");
         }
 
         /* Если в двух интерфейсах используются разные методы,
@@ -37,12 +37,12 @@ namespace Task3
         */
         public void Play()
         {
-
+            Console.WriteLine("Просмотр с диска начат");
         }
 
         public void Record()
         {
-
+            Console.WriteLine("Запись на дик начата");
         }
     }
 }

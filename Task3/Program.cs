@@ -12,11 +12,18 @@ namespace Task3
     {
         static void Main(string[] args)
         {
-            IRecordable functionRecord = new Player();
-            IPlayable functionPlay = new Player();
-
+            Player player = new Player();
+            IRecordable functionRecord = player as IRecordable;
+            IPlayable functionPlay = player as IPlayable;
+            
+            //MakeAMovie();
 
             Console.ReadKey();
+
+            //void MakeAMovie()
+            //{
+            //    Console.WriteLine("Запись на диск начата.\n");
+            //}
         }
     }
 }
