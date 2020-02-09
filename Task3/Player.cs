@@ -4,26 +4,33 @@ using System.Text;
 
 namespace Task3
 {
-    class Player : IPlayable, IRecodable
+    class Player : IPlayable, IRecordable
     {
+        string _footage;
+
         public void Pause()
         {
-            throw new NotImplementedException();
+            
         }
 
         public void Play()
         {
-            throw new NotImplementedException();
+            
         }
 
         public void Record()
         {
-            throw new NotImplementedException();
+            
         }
 
         public void Stop()
         {
-            throw new NotImplementedException();
+            
+        }
+
+        public void MakeAVideo()
+        {
+            Console.WriteLine("Запись на камере запущена.\n");
         }
     }
 }

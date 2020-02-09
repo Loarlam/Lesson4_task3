@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Task3
 {
-    interface IRecodable
+    interface IRecordable
     {
         void Record();
         void Pause();

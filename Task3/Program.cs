@@ -12,7 +12,10 @@ namespace Task3
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            IPlayable functionPlay = new Player();
+            IRecordable functionRecord = new Player();
+
+            Console.ReadKey();
         }
     }
 }
