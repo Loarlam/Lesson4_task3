@@ -12,8 +12,9 @@ namespace Task3
     {
         static void Main(string[] args)
         {
-            IPlayable functionPlay = new Player();
             IRecordable functionRecord = new Player();
+            IPlayable functionPlay = new Player();
+
 
             Console.ReadKey();
         }
